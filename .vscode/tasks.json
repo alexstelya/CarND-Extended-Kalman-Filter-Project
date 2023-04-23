@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "if [ ! -d ${workspaceFolder}/build ]; then mkdir ${workspaceFolder}/build; fi && cd ${workspaceFolder}/build && cmake .. -DCMAKE_BUILD_TYPE=Debug && cmake --build .",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

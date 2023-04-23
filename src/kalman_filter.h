@@ -3,8 +3,9 @@
 
 #include "Eigen/Dense"
 
-class KalmanFilter {
- public:
+class KalmanFilter
+{
+public:
   /**
    * Constructor
    */
@@ -63,6 +64,9 @@ class KalmanFilter {
 
   // measurement covariance matrix
   Eigen::MatrixXd R_;
+
+private:
+  void Calculate(const Eigen::VectorXd &y);
 };
 
 #endif // KALMAN_FILTER_H_

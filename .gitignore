@@ -5,7 +5,7 @@
 build/
 
 # editor config
-.vscode/
+#.vscode/
 
 # Xcode
 *.pbxuser
@@ -22,3 +22,5 @@ xcuserdata/
 *.xcscmblueprint
 ide_profiles/xcode/Debug/
 ide_profiles/xcode/ExtendedKF.build/
+
+term2_sim_linux/
